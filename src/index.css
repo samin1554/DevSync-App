@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 220 14% 96%;
+  --primary-foreground: 220.9 39.3% 11%;
+  --secondary: 220 14.3% 95.9%;
+  --secondary-foreground: 220.9 39.3% 11%;
+  --accent: 220 14.3% 95.9%;
+  --accent-foreground: 220.9 39.3% 11%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 48 96% 89%;
+  --card: 0 0% 100%;
+  --card-foreground: 220.9 39.3% 11%;
+  --ring: 220.9 39.3% 11%;
+  --input: 220 13% 91%;
+  --background: 0 0% 100%;
+  --foreground: 220.9 39.3% 11%;
+}
+
+/* Light theme overrides for better visibility */
+[data-theme="light"] {
+  --primary: 220 14% 96%;
+  --primary-foreground: 220.9 39.3% 11%;
+  --secondary: 220 14.3% 95.9%;
+  --secondary-foreground: 220.9 39.3% 11%;
+  --accent: 220 14.3% 95.9%;
+  --accent-foreground: 220.9 39.3% 11%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 48 96% 89%;
+  --card: 0 0% 100%;
+  --card-foreground: 220.9 39.3% 11%;
+  --ring: 220.9 39.3% 11%;
+  --input: 220 13% 91%;
+  --background: 0 0% 100%;
+  --foreground: 220.9 39.3% 11%;
+}
+
+/* Darker text overrides for better readability */
+[data-theme="light"] .text-base-content {
+  color: #1a1a1a !important;
+}
+
+[data-theme="light"] .text-neutral-content {
+  color: #404040 !important;
+}
+
+[data-theme="light"] .text-base-content {
+  color: #1a1a1a !important;
+}
+
+[data-theme="light"] h1, 
+[data-theme="light"] h2, 
+[data-theme="light"] h3, 
+[data-theme="light"] h4, 
+[data-theme="light"] h5, 
+[data-theme="light"] h6 {
+  color: #0a0a0a !important;
+}
+
+[data-theme="light"] p {
+  color: #262626 !important;
+}
+
+[data-theme="light"] span {
+  color: inherit;
+}
+
+.dark {
+  --primary: 220.9 39.3% 11%;
+  --primary-foreground: 220 14% 96%;
+  --secondary: 215 27.9% 16.9%;
+  --secondary-foreground: 220 14% 96%;
+  --accent: 215 27.9% 16.9%;
+  --accent-foreground: 220 14% 96%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 48 96% 89%;
+  --card: 220.9 39.3% 11%;
+  --card-foreground: 220 14% 96%;
+  --ring: 216 12.2% 83.9%;
+  --input: 215 27.9% 16.9%;
+  --background: 220.9 39.3% 11%;
+  --foreground: 220 14% 96%;
+}
+
+/* Remove all other styles to avoid conflicts with Tailwind CSS */
